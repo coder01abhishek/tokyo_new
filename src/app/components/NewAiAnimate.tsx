@@ -58,7 +58,7 @@ const NewAiAnimate = () => {
             gsap.set('.right-pill', { x: 200, scale: 0, opacity: 0 });
             gsap.set('.doll', { scale: 0, opacity: 0 });
             gsap.set('.bottom-tab', { y: 50, opacity: 0 });
-            gsap.set('.gradient-overlay', { x: '-100%', opacity: 0 });
+            
 
             // Create the main animation timeline
             const tl = gsap.timeline({
@@ -85,7 +85,7 @@ const NewAiAnimate = () => {
             tl.to('.right-pill', { x: 0, scale: 1, opacity: 1, stagger: 0.3, duration: 1 }, 1);
 
             // Gradient overlay
-            tl.to('.gradient-overlay', { x: '100%', opacity: 1, duration: 1.5 }, 2);
+            
         }, sectionRef);
 
         return () => ctx.revert();
