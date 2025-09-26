@@ -33,7 +33,6 @@ const Hero: React.FC = () => {
                     muted
                     playsInline
                     preload="auto"
-                    loading="eager"
                     className="z-10 w-full sm:h-full h-90 object-contain"
                 />
 
